@@ -28,7 +28,8 @@ def current_coords():
     res = requests.get(api).json()
     lon = res['iss_position']['longitude']
     lat = res['iss_position']['latitude']
-    return {'lon': float(lon), 'lat': float(lat), 'timestamp': res['timestamp']}
+    return {'lon': float(lon), 'lat': float(lat),
+            'timestamp': res['timestamp']}
 
 
 def over_indy():
