@@ -57,7 +57,6 @@ def draw_iss():
     indy = turtle.Turtle()
 
     iss.shape('iss.gif')
-    iss.penup()
     iss.goto(current_coords()['lon'], current_coords()['lat'])
 
     indy.penup()
